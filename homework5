@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 5 – Photomontage & Design</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        img.photomontage {
+            display: block;
+            margin: 10px 0;
+            max-width: 100%;
+            width: 400px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        img.screenshot {
+            display: block;
+            margin: 10px 0;
+            max-width: 100%;
+            width: 600px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        hr {
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Homework 5 – Photomontage & Design</h2>
+
+    <img class="photomontage" src="photomontage.jpg" alt="Photomontage">
+
+    <p><strong>Reflection:</strong></p>
+    <p>
+        In this updated version of my photomontage, I want to focus more on the idea of how AI and data can take over human thoughts. The green binary code overlay is the biggest change I made, and I used it to show how technology surrounds us and slowly becomes part of who we are. Instead of only showing AI’s control through technologies, I wanted the code itself to feel alive, almost like it’s moving through the background and connecting everything together. The robotic hands, gears, and exposed brain are all connected by the code, showing how the way people think and artificial systems are becoming harder to separate in our society.
+    </p>
+    <p>
+        The repeating numbers represent the nonstop stream of information that people deal with every day from technology, such as phones, computers, and social media. I wanted it to look a bit overwhelming, almost like there is no way to escape the constant flow of data. I like that the codes slightly cover the man’s face and brain because it makes it seem like he is being absorbed by the system instead of being in control of it, just like how in our world now, the amount of originality is decreasing as people are relying more on AI and technology.
+    </p>
+    <p>
+        I also played around with the color and lighting to find a balance between the mechanical and human energy. The bright blue electricity adds motion, while the green tones from the code give off a cold and digital feeling, like the glow from a stiff computer screen. My goal was to make people think about whether we still have control over technology, or does technology truly have a huge impact on us, slowly influencing and shaping the way we think and feel.
+    </p>
+
+    <nav>
+        <a href="index.html">Back to Homepage</a>
+    </nav>
+</body>
+</html>
