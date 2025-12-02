@@ -6,33 +6,75 @@
         body {
             font-family: "Times New Roman", Times, serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 950px;
             margin: 40px auto;
             padding: 0 20px;
+            background-color: #fffaf0;
         }
-        img.photomontage {
-            display: block;
-            margin: 10px 0;
-            max-width: 100%;
-            width: 400px;
-            height: auto;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-        img.screenshot {
-            display: block;
-            margin: 10px 0;
-            max-width: 100%;
-            width: 600px; 
-            height: auto;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
+
         h2, h3 {
             color: #333;
+            text-align: center;
         }
-        hr {
-            margin: 40px 0;
+
+        .photomontage, .screenshot {
+            border-radius: 10px;
+            border: 3px solid #fff1b8; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .photomontage {
+            max-width: 400px;
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .screenshot {
+            max-width: 300px;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .text-block {
+            background-color: #fff1b8; 
+            padding: 25px 30px;
+            border-radius: 15px;
+            line-height: 1.6;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 12px;
+            background-color: #ffd1dc; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+        }
+
+        nav a:hover {
+            transform: scale(1.05);
+            background-color: #ffb3c6;
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
         }
     </style>
 </head>
@@ -42,27 +84,33 @@
     <h3>First Photomontage</h3>
     <img class="photomontage" src="photomontage1.jpg" alt="First Photomontage">
 
-    <p><strong>Screenshot:</strong></p>
-    <img class="screenshot" src="Screenshot 2025-09-20 143943.png" alt="Screenshot of first photomontage in Photoshop">
-    <img class="screenshot" src="Screenshot 2025-10-06 231805.png" alt="Screenshot of first photomontage layers panel">
+    <p class="label"><strong>Screenshots:</strong></p>
+    <div class="image-row">
+        <img class="screenshot" src="Screenshot 2025-09-20 143943.png" alt="Screenshot of first photomontage in Photoshop">
+        <img class="screenshot" src="Screenshot 2025-10-06 231805.png" alt="Screenshot of first photomontage layers panel">
+    </div>
 
-    <p><strong>Reflection:</strong></p>
-    <p>
-        For this photomontage, I wanted to show how pollution starts from something small and grows into something much bigger, and how littering is a huge issue in our society. The top half of my image shows a clean city during sunset, with a person reaching their arm out to drop a crushed soda can. With how clean the surroundings look and only one thing is being tossed on the ground, it may seem like nothing serious. But the bottom half reveals a huge landfill filled with garbage, showing what happens when everyone thinks that littering once won’t do much damage to our environment. I want people to realize that every small action we take matters. When one person litters, it doesn’t seem like a big deal, but when everyone thinks this way, and millions do it, the world becomes covered in trash. The contrast between the calm city and the messy landfill represents how we often ignore the problem because we don’t see it, it is hidden from our daily lives. The image is meant to make viewers feel uncomfortable and think about how our habits affect the planet. One tiny act of carelessness can lead to a much bigger damage is what I am trying to express with this image. People should realize that change starts with small choices. If pollution originates from small actions, then so can being eco-friendly. Picking up trash, recycling, and caring about what we leave behind are all the options we have to help save the planet. Things can build up very quickly when we don’t take responsibility. Our environment cannot fix itself, and the future depends on how we choose to act right now.
-    </p>
+    <div class="text-block">
+        <p>
+            For this photomontage, I wanted to show how pollution starts from something small and grows into something much bigger, and how littering is a huge issue in our society. The top half of my image shows a clean city during sunset, with a person reaching their arm out to drop a crushed soda can. With how clean the surroundings look and only one thing is being tossed on the ground, it may seem like nothing serious. But the bottom half reveals a huge landfill filled with garbage, showing what happens when everyone thinks that littering once won’t do much damage to our environment. I want people to realize that every small action we take matters. When one person litters, it doesn’t seem like a big deal, but when everyone thinks this way, and millions do it, the world becomes covered in trash. The contrast between the calm city and the messy landfill represents how we often ignore the problem because we don’t see it, it is hidden from our daily lives. The image is meant to make viewers feel uncomfortable and think about how our habits affect the planet. One tiny act of carelessness can lead to a much bigger damage is what I am trying to express with this image. People should realize that change starts with small choices. If pollution originates from small actions, then so can being eco-friendly. Picking up trash, recycling, and caring about what we leave behind are all the options we have to help save the planet. Things can build up very quickly when we don’t take responsibility. Our environment cannot fix itself, and the future depends on how we choose to act right now.
+        </p>
+    </div>
 
     <hr>
 
     <h3>Second Photomontage</h3>
     <img class="photomontage" src="photomontage2.jpg" alt="Second Photomontage">
 
-    <p><strong>Screenshot:</strong></p>
-    <img class="screenshot" src="Screenshot 2025-10-06 233745.png" alt="Screenshot of second photomontage in Photoshop">
+    <p class="label"><strong>Screenshot:</strong></p>
+    <div class="image-row">
+        <img class="screenshot" src="Screenshot 2025-10-06 233745.png" alt="Screenshot of second photomontage in Photoshop">
+    </div>
 
-    <p><strong>Reflection:</strong></p>
-    <p>
-       In this photomontage, I wanted to show how artificial intelligence can affect the human mind and creativity. The robotic hands above the open skull and exposed brain represent how technology is starting to control and shape the way we think. The background full of gears shows how stiff and repetitive AI can be, while the electricity between the hands and brain shows a kind of transfer of energy from AI to us. I wanted to emphasize the idea that technology and AI aren’t just helping us anymore, it is starting to take over parts of our imagination and thought process too. Nowadays, some people rely way too much on AI. The man’s expression looks empty and soulless, which to me represents how people can lose a sense of themselves when they rely too much on AI. It’s almost like our creativity is being replaced by machines and codes that can “think” faster but don’t actually feel or imagine like actual humans do. I also want to question how much of our ideas are actually our own and how much are shaped by what we see through technology. I have mixed feelings about AI. On one hand, it is fascinating and helpful, but on the other hand, it is also a little scary to think about how much control it might have over us in the future, especially now that AI is starting to take over certain jobs too. While AI can inspire us, it shouldn’t replace the human part of creativity that makes our thoughts and actions unique.
-    </p>
+    <div class="text-block">
+        <p>
+           In this photomontage, I wanted to show how artificial intelligence can affect the human mind and creativity. The robotic hands above the open skull and exposed brain represent how technology is starting to control and shape the way we think. The background full of gears shows how stiff and repetitive AI can be, while the electricity between the hands and brain shows a kind of transfer of energy from AI to us. I wanted to emphasize the idea that technology and AI aren’t just helping us anymore, it is starting to take over parts of our imagination and thought process too. Nowadays, some people rely way too much on AI. The man’s expression looks empty and soulless, which to me represents how people can lose a sense of themselves when they rely too much on AI. It’s almost like our creativity is being replaced by machines and codes that can “think” faster but don’t actually feel or imagine like actual humans do. I also want to question how much of our ideas are actually our own and how much are shaped by what we see through technology. I have mixed feelings about AI. On one hand, it is fascinating and helpful, but on the other hand, it is also a little scary to think about how much control it might have over us in the future, especially now that AI is starting to take over certain jobs too. While AI can inspire us, it shouldn’t replace the human part of creativity that makes our thoughts and actions unique.
+        </p>
+    </div>
 
      <nav>
         <a href="index.html">Back to Homepage</a> 
