@@ -24,17 +24,29 @@
             height: auto;
             border-radius: 12px;
             border: 8px double #d4a5f5; /* Decorative double border */
-            box-shadow: 0 8px 12px rgba(0,0,0,0.2); /* Subtle shadow for depth */
-            padding: 5px; /* Space between image and border */
-            background-color: #f3eaff; /* Slight background to enhance the border */
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+            padding: 5px;
+            background-color: #f3eaff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img.eye:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
         }
 
         .reflection {
-            background-color: #eadbff; /* Set background color for text block */
-            padding: 20px;
+            background-color: #eadbff;
+            padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             margin: 30px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .reflection:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
         }
 
         nav {
