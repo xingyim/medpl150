@@ -6,24 +6,55 @@
         body {
             font-family: "Times New Roman", Times, serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
         }
-        img.gif {
-            display: block;
-            margin: 10px 0 20px 0;
-            max-width: 100%;
-            width: 600px;
-            height: auto;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
+
         h2, h3 {
             color: #333;
         }
-        hr {
-            margin: 40px 0;
+
+        .gif-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .gif-container {
+            text-align: center;
+            width: 48%;
+        }
+
+        img.gif {
+            display: block;
+            margin: 10px auto 20px auto;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .text-block {
+            background-color: #e6ffe6;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+            margin-bottom: 40px;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
         }
     </style>
 </head>
@@ -31,22 +62,29 @@
 
     <h2>Homework 8: Animated GIFs</h2>
 
-    <h3>GIF 1: Blink</h3>
-    <img class="gif" src="blinking-eye-gif.gif" alt="Blinking eye animation">
+    <div class="gif-row">
+        <div class="gif-container">
+            <h3>GIF 1: Blink</h3>
+            <img class="gif" src="blinking-eye-gif.gif" alt="Blinking eye animation">
+        </div>
 
-    <h3>GIF 2: Cut-Up Cinema</h3>
-    <img class="gif" src="cut-up-cinema.gif" alt="Cut Up Cinema animation">
+        <div class="gif-container">
+            <h3>GIF 2: Cut-Up Cinema</h3>
+            <img class="gif" src="cut-up-cinema.gif" alt="Cut Up Cinema animation">
+        </div>
+    </div>
 
-    <hr>
+    <div class="text-block">
+        <h3>Reflection</h3>
 
-    <h3>Reflection</h3>
-    <p>
-        For part one of this assignment, I used my eye drawing from homework #6 and created a blinking animation using the frame animation feature in Photoshop. I worked with 7 frames and tested different timing options to see how speed affects the realism of movement. I adjusted the delay between frames to make the blink look more natural instead of stiff or rushed. Each frame included small changes to the eyelid position to show the eye closing and opening gradually.
-    </p>
+        <p>
+            For part one of this assignment, I used my eye drawing from homework #6 and created a blinking animation using the frame animation feature in Photoshop. I worked with 7 frames and tested different timing options to see how speed affects the realism of movement. I adjusted the delay between frames to make the blink look more natural instead of stiff or rushed. Each frame included small changes to the eyelid position to show the eye closing and opening gradually.
+        </p>
 
-    <p>
-        For part two, I used a My Melody image instead of a photo of a person. I selected and cut out the character using Photoshop’s selection tools and placed it on a clean background. After that, I used the Puppet Warp tool to animate her head moving side to side. I added a total of seven wrap pins, with two on her head, one on the torso, and one on each limb in order to control the movement more precisely. By doing this, it helped me keep the body stable while allowing the head to move smoothly from side to side without distorting the rest of the image too much. I created 11 frames and set each frame to 0.1 seconds to keep the motion smooth and continuous. For each frame, I duplicated the layer and made small adjustments using Puppet Warp so the movement flowed naturally from one frame to the next. I also used the Timeline panel to preview the animation and adjust the timing until the motion looked consistent.
-    </p>
+        <p>
+            For part two, I used a My Melody image instead of a photo of a person. I selected and cut out the character using Photoshop’s selection tools and placed it on a clean background. After that, I used the Puppet Warp tool to animate her head moving side to side. I added a total of seven wrap pins, with two on her head, one on the torso, and one on each limb in order to control the movement more precisely. By doing this, it helped me keep the body stable while allowing the head to move smoothly from side to side without distorting the rest of the image too much. I created 11 frames and set each frame to 0.1 seconds to keep the motion smooth and continuous. For each frame, I duplicated the layer and made small adjustments using Puppet Warp so the movement flowed naturally from one frame to the next. I also used the Timeline panel to preview the animation and adjust the timing until the motion looked consistent.
+        </p>
+    </div>
 
     <nav>
         <a href="index.html">Back to Homepage</a>
