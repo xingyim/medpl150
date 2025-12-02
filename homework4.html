@@ -17,41 +17,53 @@
             text-align: center;
         }
 
-        .photomontage, .screenshot {
-            border-radius: 10px;
-            border: 3px solid #fff1b8; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-
         .photomontage {
+            border-radius: 10px;
+            border: 3px solid #d9f8f0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             max-width: 400px;
             width: 100%;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .screenshot {
+            border-radius: 10px;
+            border: 3px solid #d9f8f0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             max-width: 300px;
             width: 100%;
-            display: inline-block;
+            display: block;
+            margin-bottom: 20px;
         }
 
-        .image-row {
+        .first-montage-row {
             display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
             justify-content: center;
-            margin-bottom: 25px;
+            margin-bottom: 40px;
+        }
+
+        .screenshot-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
         }
 
         .text-block {
-            background-color: #fff1b8; 
+            background-color: #d9f8f0;
             padding: 25px 30px;
             border-radius: 15px;
             line-height: 1.6;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .second-montage-row {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
             margin-bottom: 40px;
         }
 
@@ -66,7 +78,7 @@
             font-weight: bold;
             padding: 12px 25px;
             border-radius: 12px;
-            background-color: #ffd1dc; 
+            background-color: #ffd1dc;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
         }
@@ -82,12 +94,12 @@
     <h2>Homework 4 – Photomontage</h2>
 
     <h3>First Photomontage</h3>
-    <img class="photomontage" src="photomontage1.jpg" alt="First Photomontage">
-
-    <p class="label"><strong>Screenshots:</strong></p>
-    <div class="image-row">
-        <img class="screenshot" src="Screenshot 2025-09-20 143943.png" alt="Screenshot of first photomontage in Photoshop">
-        <img class="screenshot" src="Screenshot 2025-10-06 231805.png" alt="Screenshot of first photomontage layers panel">
+    <div class="first-montage-row">
+        <img class="photomontage" src="photomontage1.jpg" alt="First Photomontage">
+        <div class="screenshot-column">
+            <img class="screenshot" src="Screenshot 2025-09-20 143943.png" alt="Screenshot of first photomontage in Photoshop">
+            <img class="screenshot" src="Screenshot 2025-10-06 231805.png" alt="Screenshot of first photomontage layers panel">
+        </div>
     </div>
 
     <div class="text-block">
@@ -96,13 +108,9 @@
         </p>
     </div>
 
-    <hr>
-
     <h3>Second Photomontage</h3>
-    <img class="photomontage" src="photomontage2.jpg" alt="Second Photomontage">
-
-    <p class="label"><strong>Screenshot:</strong></p>
-    <div class="image-row">
+    <div class="second-montage-row">
+        <img class="photomontage" src="photomontage2.jpg" alt="Second Photomontage">
         <img class="screenshot" src="Screenshot 2025-10-06 233745.png" alt="Screenshot of second photomontage in Photoshop">
     </div>
 
@@ -112,7 +120,7 @@
         </p>
     </div>
 
-     <nav>
+    <nav>
         <a href="index.html">Back to Homepage</a> 
     </nav>
 </body>
