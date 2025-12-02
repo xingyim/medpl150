@@ -33,23 +33,29 @@
             width: 400px;
             height: auto;
             border-radius: 12px;
-            border: 5px double #ffd1dc; /* decorative double border */
+            border: 5px double #ffd1dc; /* Decorative double border */
             padding: 5px;
             box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .image-container img:hover {
             transform: scale(1.03);
-            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.25);
         }
 
         .reflection {
-            background-color: #ffdada;
+            background-color: #ffdada; /* Text block color */
             padding: 25px 30px;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             margin-bottom: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .reflection:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
         }
 
         nav {
