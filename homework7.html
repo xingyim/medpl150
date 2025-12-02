@@ -6,47 +6,91 @@
         body {
             font-family: "Times New Roman", Times, serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
         }
-        img.env {
-            display: block;
-            margin: 10px 0;
-            max-width: 100%;
-            width: 600px;
-            height: auto;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
+
         h2, h3 {
             color: #333;
+            text-align: center;
         }
-        hr {
-            margin: 40px 0;
+
+        .image-row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .image-row img {
+            max-width: 100%;
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .reflection {
+            background-color: #ffdada;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 12px;
+            background-color: #ffd1dc;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+        }
+
+        nav a:hover {
+            transform: scale(1.05);
+            background-color: #ffb3c6;
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
         }
     </style>
 </head>
 <body>
     <h2>Homework 7: Illustrated Environment</h2>
 
-    <h3>Original Photograph</h3>
-    <img class="env" src="istockphoto-1158468115-612x612.jpg" alt="Original environment photograph">
+    <div class="image-row">
+        <div>
+            <h3>Original Photograph</h3>
+            <img src="istockphoto-1158468115-612x612.jpg" alt="Original environment photograph">
+        </div>
+        <div>
+            <h3>Illustrated Environment</h3>
+            <img src="illustrated environment.png" alt="Illustrated environment">
+        </div>
+    </div>
 
-    <h3>Illustrated Environment</h3>
-    <img class="env" src="illustrated environment.png" alt="Illustrated environment">
+    <div class="reflection">
+        <p>
+           I have always loved being in the city and the vibes that come with it, so I chose the front of a café, which is often found on busy city streets. Cafés give me a familiar and comforting feeling. They are places where people can pause and relax, to enjoy a coffee or a quiet moment while life continues moving outside. There is something I find peaceful about watching the world from inside a café, and I wanted to capture that feeling in my illustration. My goal was to show a calm space within the busy city by simplifying the real photo into a clean and stylized design.
+        </p>
 
-    <p>
-       I have always loved being in the city and the vibes that come with it, so I chose the front of a café, which is often found on busy city streets. Cafés give me a familiar and comforting feeling. They are places where people can pause and relax, to enjoy a coffee or a quiet moment while life continues moving outside. There is something I find peaceful about watching the world from inside a café, and I wanted to capture that feeling in my illustration. My goal was to show a calm space within the busy city by simplifying the real photo into a clean and stylized design.
-    </p>
+        <p>
+            Using Adobe Illustrator, I worked with different layers to separate the objects in the image. I used the background layer for buildings, middle ground for windows, and foreground for smaller details like the hanging flower pots and the sign in front. I traced and filled each section by hand with the pen and shape tools. Being limited to using only three colors made me think more carefully about how they can work together to create a mood and balance. The soft pink tones add warmth and friendliness, while the blues give a sense of calmness. The dark gray brings in contrast and keeps the image grounded.
+        </p>
 
-    <p>
-        Using Adobe Illustrator, I worked with different layers to separate the objects in the image. I used the background layer for buildings, middle ground for windows, and foreground for smaller details like the hanging flower pots and the sign in front. I traced and filled each section by hand with the pen and shape tools. Being limited to using only three colors made me think more carefully about how they can work together to create a mood and balance. The soft pink tones add warmth and friendliness, while the blues give a sense of calmness. The dark gray brings in contrast and keeps the image grounded.
-    </p>
-
-    <p>
-        This project taught me how much feeling and atmosphere can come through even using just simple shapes and colors. Even with minimal elements, you can be able to tell a story and create a specific emotion through different colors.
-    </p>
+        <p>
+            This project taught me how much feeling and atmosphere can come through even using just simple shapes and colors. Even with minimal elements, you can be able to tell a story and create a specific emotion through different colors.
+        </p>
+    </div>
 
     <nav>
         <a href="index.html">Back to Homepage</a>
