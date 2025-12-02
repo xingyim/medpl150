@@ -34,12 +34,24 @@
             margin-bottom: 25px;
         }
 
-        img {
-            max-width: 300px; 
-            width: 100%;
-            border-radius: 10px;
-            border: 3px solid #fff1a8; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            width: 300px;
+            height: auto;
+            border-radius: 12px;
+            border: 5px double #fff1a8; /* decorative double border */
+            padding: 5px;
+            box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
         }
 
         .text-block {
@@ -81,23 +93,37 @@
     <h2>Part 1: Depth of Field</h2>
     <p class="label">Deep, Shallow & Photoshopped Field Blur</p>
     <div class="image-row">
-        <img src="Screenshot 2025-09-19 144944.png" alt="Deep Depth of Field">
-        <img src="shallow depth of field.jpg" alt="Shallow Depth of Field">
-        <img src="photoshop field blur.jpg" alt="Photoshopped Field Blur">
+        <div class="image-container">
+            <img src="Screenshot 2025-09-19 144944.png" alt="Deep Depth of Field">
+        </div>
+        <div class="image-container">
+            <img src="shallow depth of field.jpg" alt="Shallow Depth of Field">
+        </div>
+        <div class="image-container">
+            <img src="photoshop field blur.jpg" alt="Photoshopped Field Blur">
+        </div>
     </div>
 
     <h2>Part 2: Camera Raw</h2>
 
     <p class="label">Set 1: Before & After</p>
     <div class="image-row">
-        <img src="Screenshot 2025-09-19 163629.png" alt="Camera Raw Before 1">
-        <img src="camera raw 1.jpg" alt="Camera Raw After 1">
+        <div class="image-container">
+            <img src="Screenshot 2025-09-19 163629.png" alt="Camera Raw Before 1">
+        </div>
+        <div class="image-container">
+            <img src="camera raw 1.jpg" alt="Camera Raw After 1">
+        </div>
     </div>
 
     <p class="label">Set 2: Before & After</p>
     <div class="image-row">
-        <img src="Screenshot 2025-09-19 145035.png" alt="Camera Raw Before 2">
-        <img src="camera raw 2.jpg" alt="Camera Raw After 2">
+        <div class="image-container">
+            <img src="Screenshot 2025-09-19 145035.png" alt="Camera Raw Before 2">
+        </div>
+        <div class="image-container">
+            <img src="camera raw 2.jpg" alt="Camera Raw After 2">
+        </div>
     </div>
 
     <div class="text-block">
