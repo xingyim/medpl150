@@ -5,25 +5,64 @@
     <style>
         body {
             font-family: "Times New Roman", Times, serif;
-            line-height: 1.6;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
+            background-color: #fffaf0;
         }
-        img.env {
-            display: block;
-            margin: 10px 0;
-            max-width: 100%;
-            width: 700px;
-            height: auto;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-        h2, h3 {
+
+        h2 {
+            text-align: center;
             color: #333;
+            margin-bottom: 40px;
         }
-        hr {
-            margin: 40px 0;
+
+        .homework-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .env {
+            border-radius: 10px;
+            border: 3px solid #fce1ff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 450px;
+            width: 100%;
+        }
+
+        .text-block {
+            background-color: #fce1ff;
+            padding: 30px;
+            border-radius: 15px;
+            line-height: 1.6;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 300px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 12px;
+            background-color: #ffd1dc;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+        }
+
+        nav a:hover {
+            transform: scale(1.05);
+            background-color: #ffb3c6;
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
         }
     </style>
 </head>
@@ -31,22 +70,23 @@
 
     <h2>Homework 9: Data Visualization</h2>
 
-    <h3>Data Charts on Students' Study Habits</h3>
-    <img class="env" src="Screenshot 2025-12-01 225340.png" alt="Study Habits Data Visualization">
+    <div class="homework-row">
+        <img class="env" src="Screenshot 2025-12-01 225340.png" alt="Study Habits Data Visualization">
+        <div class="text-block">
+            <h3>Reflection</h3>
+            <p>
+                I collected data on student study habits by taking 20 people’s responses in a survey about their daily study hours, preferred study methods, and favorite study environments. After gathering the responses, I first organized the information into tables so it could be accurately pasted into the charts. This helped me see how important it is to simplify and organize data before attempting to visualize it. Once I finished organizing everything, I then chose different types of graphs for each data set.
+            </p>
 
-    <h3>Reflection</h3>
+            <p>
+                I used a bar graph to show the number of people studying between one and five hours per day since it allows for easy comparison between categories. The data showed that most students study between two and three hours per day. For preferred study methods, I used a pie chart, and it was clear and easy to see that taking notes was the most common method, while flashcards and doing practice problems were close behind. I used another bar graph for preferred study environments, and my data showed that the library was the most popular place people prefer to study at. I also used a consistent color palette for the graphs to help separate each category while keeping the overall design visually organized. The colors help make the data easier to read and compare at a glance.
+            </p>
 
-    <p>
-        I collected data on student study habits by taking 20 people’s responses in a survey about their daily study hours, preferred study methods, and favorite study environments. After gathering the responses, I first organized the information into tables so it could be accurately pasted into the charts. This helped me see how important it is to simplify and organize data before attempting to visualize it. Once I finished organizing everything, I then chose different types of graphs for each data set.
-    </p>
-
-    <p>
-        I used a bar graph to show the number of people studying between one and five hours per day since it allows for easy comparison between categories. The data showed that most students study between two and three hours per day. For preferred study methods, I used a pie chart, and it was clear and easy to see that taking notes was the most common method, while flashcards and doing practice problems were close behind. I used another bar graph for preferred study environments, and my data showed that the library was the most popular place people prefer to study at. I also used a consistent color palette for the graphs to help separate each category while keeping the overall design visually organized. The colors help make the data easier to read and compare at a glance.
-    </p>
-
-    <p>
-        Using the graphing tools helped me understand how digital design software can be used to turn numbers into visual information that is easier to interpret. I focused on keeping my layout clean, using consistent colors, and adding clear labels so my data can be easy to read.
-    </p>
+            <p>
+                Using the graphing tools helped me understand how digital design software can be used to turn numbers into visual information that is easier to interpret. I focused on keeping my layout clean, using consistent colors, and adding clear labels so my data can be easy to read.
+            </p>
+        </div>
+    </div>
 
     <nav>
         <a href="index.html">Back to Homepage</a>
