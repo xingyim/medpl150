@@ -6,42 +6,84 @@
         body {
             font-family: "Times New Roman", Times, serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
+            background-color: #eadbff; 
         }
-        img.eye {
-            display: block;
-            margin: 10px 0;
-            max-width: 100%;
-            width: 600px;
+
+        h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+
+        .eye-container {
+            display: flex;
+            flex-wrap: wrap; 
+            align-items: flex-start;
+            gap: 30px;
+            margin: 40px 0;
+            background-color: #fff; 
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .eye-container img.eye {
+            max-width: 400px;
+            width: 100%;
             height: auto;
             border: 1px solid #ccc;
             border-radius: 6px;
         }
-        h2, h3 {
-            color: #333;
+
+        .eye-container .reflection {
+            flex: 1;
+            min-width: 250px;
         }
-        hr {
-            margin: 40px 0;
+
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 12px;
+            background-color: #ffd1dc;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+        }
+
+        nav a:hover {
+            transform: scale(1.05);
+            background-color: #ffb3c6;
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
         }
     </style>
 </head>
 <body>
     <h2>Homework 6: In-Lab Vector Emotive Eye</h2>
 
-    <img class="eye" src="Screenshot 2025-10-29 235912.png" alt="Vector eye expressing fear">
+    <div class="eye-container">
+        <img class="eye" src="Screenshot 2025-10-29 235912.png" alt="Vector eye expressing fear">
 
-    <p><strong>Reflection:</strong></p>
-    <p>
-        I chose to show the emotion of fear through the eye. I believe fear is one of the strongest and most universal feelings people experience. Everyone knows what it is like to feel scared, especially for me. Being an anxious person, I often feel fear through the little things in my everyday life, and I wanted to capture this feeling in a very simple but powerful way. I didn’t want to make the eye look realistic; instead, I wanted it to feel more symbolic, almost like how fear feels inside us rather than just how it looks in real life.
-    </p>
-    <p>
-        The shape of the eye is stretched and uneven, which I did on purpose to make it look uneasy, as if it’s reacting to something sudden or shocking. I used black for the main part of the eye to represent the unknown or darkness, since a lot of fear comes from the unknown, the feeling of not knowing what is around us or what might happen. The orange around the pupil can represent alertness and danger like a warning sign. It creates a contrast with the small blue pupil in the center. Aside from the fact they are complementary colors, the blue also represents a sense of vulnerability or being frozen in fear.
-    </p>
-    <p>
-        I wanted the design to look exaggerated, giving off a feeling that reminds you of that moment when your heart races and your senses become sharper. Even though it’s just a single eye, I think it says a lot about how fear works. Fear is always watching and always present within us, even in small moments we might not notice.
-    </p>
+        <div class="reflection">
+            <p><strong>Reflection:</strong></p>
+            <p>
+                I chose to show the emotion of fear through the eye. I believe fear is one of the strongest and most universal feelings people experience. Everyone knows what it is like to feel scared, especially for me. Being an anxious person, I often feel fear through the little things in my everyday life, and I wanted to capture this feeling in a very simple but powerful way. I didn’t want to make the eye look realistic; instead, I wanted it to feel more symbolic, almost like how fear feels inside us rather than just how it looks in real life.
+            </p>
+            <p>
+                The shape of the eye is stretched and uneven, which I did on purpose to make it look uneasy, as if it’s reacting to something sudden or shocking. I used black for the main part of the eye to represent the unknown or darkness, since a lot of fear comes from the unknown, the feeling of not knowing what is around us or what might happen. The orange around the pupil can represent alertness and danger like a warning sign. It creates a contrast with the small blue pupil in the center. Aside from the fact they are complementary colors, the blue also represents a sense of vulnerability or being frozen in fear.
+            </p>
+            <p>
+                I wanted the design to look exaggerated, giving off a feeling that reminds you of that moment when your heart races and your senses become sharper. Even though it’s just a single eye, I think it says a lot about how fear works. Fear is always watching and always present within us, even in small moments we might not notice.
+            </p>
+        </div>
+    </div>
 
     <nav>
         <a href="index.html">Back to Homepage</a>
