@@ -3,11 +3,75 @@
 <head>
     <title>Homework 3</title>
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fffaf0;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
         .label {
             font-weight: bold;
-            font-size: 1.4em; /* bigger so it stands out */
-            color: #000;      /* make sure it's solid black */
+            font-size: 1.2em;
+            color: #000;
             margin-top: 15px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        img {
+            max-width: 300px; /* smaller and consistent */
+            width: 100%;
+            border-radius: 10px;
+            border: 3px solid #c1f0f6;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .text-block {
+            background-color: #c1f0f6;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 900px;
+            line-height: 1.6;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        nav {
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 12px;
+            background-color: #ffd1dc; /* pastel pink buttons */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+        }
+
+        nav a:hover {
+            transform: scale(1.05);
+            background-color: #ffb3c6;
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
         }
     </style>
 </head>
@@ -15,42 +79,60 @@
     <h1>Homework 3</h1>
 
     <h2>Part 1: Depth of Field</h2>
+
     <p class="label">Deep Depth of Field</p>
-    <img src="Screenshot 2025-09-19 144944.png" alt="Deep Depth of Field">
+    <div class="image-row">
+        <img src="Screenshot 2025-09-19 144944.png" alt="Deep Depth of Field">
+    </div>
 
     <p class="label">Shallow Depth of Field</p>
-    <img src="shallow depth of field.jpg" alt="Shallow Depth of Field">
+    <div class="image-row">
+        <img src="shallow depth of field.jpg" alt="Shallow Depth of Field">
+    </div>
 
     <p class="label">Photoshopped Field Blur</p>
-    <img src="photoshop field blur.jpg" alt="Photoshopped Field Blur">
+    <div class="image-row">
+        <img src="photoshop field blur.jpg" alt="Photoshopped Field Blur">
+    </div>
 
     <h2>Part 2: Camera Raw</h2>
+
     <p class="label">Before</p>
-    <img src="Screenshot 2025-09-19 163629.png" alt="Camera Raw Before 1">
+    <div class="image-row">
+        <img src="Screenshot 2025-09-19 163629.png" alt="Camera Raw Before 1">
+    </div>
 
     <p class="label">After</p>
-    <img src="camera raw 1.jpg" alt="Camera Raw After 1">
+    <div class="image-row">
+        <img src="camera raw 1.jpg" alt="Camera Raw After 1">
+    </div>
 
     <p class="label">Before</p>
-    <img src="Screenshot 2025-09-19 145035.png" alt="Camera Raw Before 2">
+    <div class="image-row">
+        <img src="Screenshot 2025-09-19 145035.png" alt="Camera Raw Before 2">
+    </div>
 
-     <p class="label">After</p>
-    <img src="camera raw 2.jpg" alt="Camera Raw After 2">
+    <p class="label">After</p>
+    <div class="image-row">
+        <img src="camera raw 2.jpg" alt="Camera Raw After 2">
+    </div>
 
-<p>
-    I captured a series of photos that depict a city life. The first set with the moving cars captures the movements and energy within the city. The deep depth of field shows the city in full detail, cars driving by and tall buildings in the back. It feels almost a little overwhelming to look at, giving off a feeling that the city is always busy and never slows down. However, the shallow depth of field changes that feeling. By blurring the background, it is as if the noise of the city fades away for a moment, letting us focus on a smaller piece of it. The photoshopped blur also creates a new focus on objects that weren't shown before, allowing us to focus on one thing at a time.
-</p>
+    <div class="text-block">
+        <p>
+            I captured a series of photos that depict a city life. The first set with the moving cars captures the movements and energy within the city. The deep depth of field shows the city in full detail, cars driving by and tall buildings in the back. It feels almost a little overwhelming to look at, giving off a feeling that the city is always busy and never slows down. However, the shallow depth of field changes that feeling. By blurring the background, it is as if the noise of the city fades away for a moment, letting us focus on a smaller piece of it. The photoshopped blur also creates a new focus on objects that weren't shown before, allowing us to focus on one thing at a time.
+        </p>
 
-<p>
-    The second part of the homework focuses on images that shift the overall view to quieter spaces. The “before” photos are darker and heavier. Meanwhile the “after” photos feel lighter, showing how light can bring out details that were always there but are easy to miss. The image of the flowers especially shows this change, turning from something dim into something bright and lively. As for the image of the tree, I made the lighting warmer to give off the feeling of the warm afternoon sunlight. This warmth changes the mood completely, it makes the scene feel calmer and softer as if time slowed down in that moment.
-</p>
+        <p>
+            The second part of the homework focuses on images that shift the overall view to quieter spaces. The “before” photos are darker and heavier. Meanwhile the “after” photos feel lighter, showing how light can bring out details that were always there but are easy to miss. The image of the flowers especially shows this change, turning from something dim into something bright and lively. As for the image of the tree, I made the lighting warmer to give off the feeling of the warm afternoon sunlight. This warmth changes the mood completely, it makes the scene feel calmer and softer as if time slowed down in that moment.
+        </p>
 
-<p>
-    The city can feel busy and overwhelming, but it also has space for a sense of calmness and beauty when we pay close attention to smaller details. Photography becomes a way to notice both motion and stillness, and to see how they can exist side by side in the same environment.
-</p>
+        <p>
+            The city can feel busy and overwhelming, but it also has space for a sense of calmness and beauty when we pay close attention to smaller details. Photography becomes a way to notice both motion and stillness, and to see how they can exist side by side in the same environment.
+        </p>
+    </div>
 
     <nav>
-        <a href="index.html">Back to Homepage</a> 
+        <a href="index.html">Back to Homepage</a>
     </nav>
 </body>
 </html>
