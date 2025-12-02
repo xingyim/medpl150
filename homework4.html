@@ -22,6 +22,9 @@
             border: 3px solid #d9f8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             display: block;
+            width: auto; /* Keep natural size */
+            max-width: 500px; /* Optional, prevents huge images */
+            height: auto;
         }
 
         .screenshot-large {
@@ -29,7 +32,8 @@
             border: 3px solid #d9f8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             height: auto;
-            margin-bottom: 20px;
+            width: auto;
+            max-width: 500px; /* Enlarged screenshot */
         }
 
         .first-montage-row {
@@ -61,19 +65,18 @@
             align-items: flex-start;
             justify-content: flex-start;
             gap: 50px;
-            flex-wrap: wrap;
             margin-bottom: 40px;
         }
 
-        /* Adjusted widths for better balance */
-        .second-montage-row .photomontage:first-child {
-            max-width: 55%;
-            width: 100%;
+        /* Keep photomontage original size, enlarge screenshot */
+        .second-montage-row img.photomontage:first-child {
+            width: auto;
+            max-width: 500px; /* Adjust as needed */
         }
 
-        .second-montage-row .photomontage:last-child {
-            max-width: 40%;
-            width: 100%;
+        .second-montage-row img.photomontage:last-child {
+            width: auto;
+            max-width: 500px; /* Enlarged screenshot */
         }
 
         nav {
