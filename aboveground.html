@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Above Ground</title>
+
+  <style>
+    :root{
+      --bg: #07070c;
+      --text: #f3f4ff;
+      --muted: rgba(243,244,255,0.75);
+      --glow: rgba(255,140,60,0.25);
+      --border: rgba(255,255,255,0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body{
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(900px 600px at 50% 15%, var(--glow), transparent 60%),
+        linear-gradient(180deg, #05050a, var(--bg));
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body::before{
+      content:"";
+      position: fixed;
+      inset: -40px;
+      background: radial-gradient(circle at center, transparent 0 55%, rgba(0,0,0,0.8) 85%);
+      pointer-events: none;
+    }
+
+    .container{
+      width: min(900px, 92vw);
+      padding: 36px 24px 44px;
+      border-radius: 22px;
+      background: rgba(10,10,18,0.55);
+      border: 1px solid var(--border);
+      box-shadow:
+        0 18px 60px rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+    }
+
+    .image{
+      width: 100%;
+      margin-bottom: 26px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 35px rgba(0,0,0,0.65);
+    }
+
+    .image img{
+      width: 100%;
+      display: block;
+    }
+
+    .title{
+      margin: 0 0 14px;
+      font-size: 26px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.85;
+    }
+
+    .text{
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .text p{
+      margin: 14px 0;
+    }
+
+    .choices{
+      margin-top: 32px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .btn{
+      display: inline-block;
+      padding: 14px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      box-shadow:
+        0 10px 24px rgba(0,0,0,0.45);
+      transition: transform 0.1s ease, box-shadow 0.2s ease;
+      text-align: center;
+      min-width: 220px;
+    }
+
+    .btn:hover{
+      transform: translateY(-1px);
+      box-shadow:
+        0 14px 34px rgba(0,0,0,0.55);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <div class="image">
+      <img src="Screenshot 2025-12-16 162333.png">
+    </div>
+
+    <div class="text">
+      <p>You decide to stay above ground.</p>
+
+      <p>The tunnel disappears behind you as you keep moving forward.</p>
+
+      <p>You wander around the city all alone.</p>
+
+      <p>The streets are completely empty now.</p>
+
+      <p>The air feels hot.</p>
+
+      <p>Too hot.</p>
+
+      <p>The light from the sky grows brighter.</p>
+
+      <p>You realize you waited too long.</p>
+    </div>
+
+    <div class="choices">
+      <a class="btn" href="bad_end.html">Proceed</a>
+      <a class="btn" href="city.html">Go back</a>
+    </div>
+
+  </main>
+</body>
+</html>
