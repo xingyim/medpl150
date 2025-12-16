@@ -69,30 +69,33 @@
       margin: 16px 0;
     }
 
+    /* WIDE PILL BUTTONS (like your screenshot) */
     .choices{
       margin-top: 34px;
       display: grid;
       gap: 14px;
-      justify-items: center;
     }
 
     .btn{
-      display: inline-block;
-      padding: 14px 18px;
-      border-radius: 14px;
+      display: block;
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 999px;
       text-decoration: none;
       color: var(--text);
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.14);
-      box-shadow: 0 10px 24px rgba(0,0,0,0.45);
-      transition: transform 0.1s ease, box-shadow 0.2s ease;
-      min-width: 220px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow:
+        0 10px 24px rgba(0,0,0,0.45);
+      transition: background 0.2s ease, box-shadow 0.2s ease;
       text-align: center;
+      font-size: 16px;
     }
 
     .btn:hover{
-      transform: translateY(-1px);
-      box-shadow: 0 14px 34px rgba(0,0,0,0.55);
+      background: rgba(255,255,255,0.08);
+      box-shadow:
+        0 14px 34px rgba(0,0,0,0.55);
     }
   </style>
 </head>
