@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Pill</title>
+
+  <style>
+    :root{
+      --bg: #07070c;
+      --text: #f3f4ff;
+      --muted: rgba(243,244,255,0.75);
+      --border: rgba(255,255,255,0.12);
+      --blood: #b11226;
+    }
+
+    * { box-sizing: border-box; }
+
+    body{
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(700px 550px at 0% 0%, rgba(160,120,255,0.25), transparent 60%),
+        radial-gradient(700px 550px at 100% 100%, rgba(177,18,38,0.12), transparent 60%),
+        linear-gradient(180deg, #05050a, var(--bg));
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body::before{
+      content:"";
+      position: fixed;
+      inset: -40px;
+      background: radial-gradient(circle at center, transparent 0 55%, rgba(0,0,0,0.85) 85%);
+      pointer-events: none;
+    }
+
+    .container{
+      width: min(900px, 92vw);
+      padding: 36px 24px 44px;
+      border-radius: 22px;
+      background: rgba(10,10,18,0.55);
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+    }
+
+    .image{
+      width: 100%;
+      margin-bottom: 26px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(0,0,0,0.65);
+    }
+
+    .image img{
+      width: 100%;
+      display: block;
+    }
+
+    /* GLITCH TEXT */
+    .panic{
+      margin: 12px 0 18px;
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      color: var(--blood);
+      position: relative;
+      text-shadow:
+        0 0 6px rgba(177,18,38,0.7),
+        0 0 14px rgba(177,18,38,0.5),
+        0 0 28px rgba(177,18,38,0.35);
+      animation: glitch 1.6s infinite;
+    }
+
+    .panic::before,
+    .panic::after{
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      color: var(--blood);
+    }
+
+    .panic::before{
+      top: -2px;
+      text-shadow: -2px 0 rgba(255,0,0,0.7);
+      animation: glitchTop 1.6s infinite linear;
+    }
+
+    .panic::after{
+      top: 2px;
+      text-shadow: 2px 0 rgba(255,0,0,0.7);
+      animation: glitchBottom 1.6s infinite linear;
+    }
+
+    @keyframes glitch{
+      0%{ transform: translate(0); }
+      20%{ transform: translate(-1px, 1px); }
+      40%{ transform: translate(1px, -1px); }
+      60%{ transform: translate(-1px, 0); }
+      80%{ transform: translate(1px, 1px); }
+      100%{ transform: translate(0); }
+    }
+
+    @keyframes glitchTop{
+      0%{ clip-path: inset(0 0 80% 0); }
+      50%{ clip-path: inset(0 0 20% 0); }
+      100%{ clip-path: inset(0 0 80% 0); }
+    }
+
+    @keyframes glitchBottom{
+      0%{ clip-path: inset(80% 0 0 0); }
+      50%{ clip-path: inset(20% 0 0 0); }
+      100%{ clip-path: inset(80% 0 0 0); }
+    }
+
+    .text{
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .text p{
+      margin: 14px 0;
+    }
+
+    .choices{
+      margin-top: 34px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .btn{
+      display: inline-block;
+      padding: 14px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.45);
+      transition: transform 0.1s ease, box-shadow 0.2s ease;
+      text-align: center;
+      min-width: 220px;
+    }
+
+    .btn:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 14px 34px rgba(0,0,0,0.55);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <div class="image">
+      <img src="Screenshot 2025-12-16 174922.png">
+    </div>
+
+    <div class="panic" data-text="I DON’T WANT TO DIE">
+      I DON’T WANT TO DIE
+    </div>
+
+    <div class="text">
+      <p>The thought drowns out everything else.</p>
+
+      <p>
+        In desperation, you swallow the immortality pill,<br>
+        without any hesitation.
+      </p>
+
+      <p>For a moment, you feel relieved.</p>
+
+      <p>Then the silence settles in.</p>
+
+      <p>Have you considered the consequences?</p>
+    </div>
+
+    <div class="choices">
+      <a class="btn" href="immortality.html">Proceed</a>
+      <a class="btn" href="lab.html">Go back</a>
+    </div>
+
+  </main>
+</body>
+</html>
