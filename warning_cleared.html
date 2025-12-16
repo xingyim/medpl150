@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>After</title>
+
+  <style>
+    :root{
+      --bg: #07070c;
+      --text: #f3f4ff;
+      --muted: rgba(243,244,255,0.75);
+      --glow: rgba(160,120,255,0.22);
+      --border: rgba(255,255,255,0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body{
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(900px 700px at 0% 0%, var(--glow), transparent 60%),
+        linear-gradient(180deg, #05050a, var(--bg));
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body::before{
+      content:"";
+      position: fixed;
+      inset: -40px;
+      background: radial-gradient(circle at center, transparent 0 55%, rgba(0,0,0,0.85) 85%);
+      pointer-events: none;
+    }
+
+    .container{
+      width: min(900px, 92vw);
+      padding: 36px 24px 44px;
+      border-radius: 22px;
+      background: rgba(10,10,18,0.55);
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+    }
+
+    .image{
+      width: 100%;
+      margin-bottom: 26px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 35px rgba(0,0,0,0.65);
+    }
+
+    .image img{
+      width: 100%;
+      display: block;
+    }
+
+    .text{
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .text p{
+      margin: 16px 0;
+    }
+
+    .choices{
+      margin-top: 34px;
+      display: grid;
+      gap: 14px;
+      justify-items: center;
+    }
+
+    .btn{
+      display: inline-block;
+      padding: 14px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.45);
+      transition: transform 0.1s ease, box-shadow 0.2s ease;
+      min-width: 220px;
+      text-align: center;
+    }
+
+    .btn:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 14px 34px rgba(0,0,0,0.55);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <div class="image">
+      <img src="light_tunnel.jpg">
+    </div>
+
+    <div class="text">
+      <p>Feeling overwhelmed, you decide to close your eyes for a bit.</p>
+
+      <p>When you open them again, you have no idea how much time has passed.</p>
+
+      <p>The tunnel feels different.</p>
+
+      <p>You stand up slowly.</p>
+
+      <p>You decide to step out of the tunnel.</p>
+    </div>
+
+    <div class="choices">
+      <a class="btn" href="world_saved.html">Proceed</a>
+      <a class="btn" href="override.html">Go back</a>
+    </div>
+
+  </main>
+</body>
+</html>
