@@ -82,6 +82,35 @@
       font-style: italic;
       opacity: 0.85;
     }
+
+    .actions{
+      margin-top: 36px;
+      display: grid;
+      gap: 14px;
+      justify-items: center;
+    }
+
+    .btn{
+      padding: 12px 18px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: var(--text);
+      text-decoration: none;
+      cursor: pointer;
+      min-width: 220px;
+      transition: transform 0.1s ease, box-shadow 0.2s ease;
+      box-shadow:
+        0 10px 24px rgba(0,0,0,0.4),
+        0 0 18px rgba(255,255,255,0.08);
+    }
+
+    .btn:hover{
+      transform: translateY(-1px);
+      box-shadow:
+        0 14px 34px rgba(0,0,0,0.5),
+        0 0 26px rgba(255,255,255,0.12);
+    }
   </style>
 </head>
 
@@ -92,7 +121,7 @@
       <img src="images/Screenshot 2025-12-16 144638.png">
     </div>
 
-    <h1>Ending — Total Extinction (But better..?)</h1>
+    <h1>Ending — Total Extinction</h1>
 
     <div class="text">
       <p>That was not a joke.</p>
@@ -110,6 +139,13 @@
         But to you,<br>
         it was an endless sleep.
       </p>
+    </div>
+
+    <div class="actions">
+
+      <button class="btn" onclick="history.back()">Go Back</button>
+
+      <a class="btn" href="start.html">Return to Start</a>
     </div>
 
   </main>
