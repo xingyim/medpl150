@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOOD END - DREAM?</title>
+
+  <style>
+    :root{
+      --bg: #07070c;
+      --text: #f3f4ff;
+      --muted: rgba(243,244,255,0.8);
+      --border: rgba(255,255,255,0.14);
+      --whiteglow: rgba(255,255,255,0.85);
+    }
+
+    * { box-sizing: border-box; }
+
+    body{
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(900px 700px at 0% 0%, rgba(200,200,255,0.22), transparent 60%),
+        radial-gradient(900px 700px at 100% 100%, rgba(255,255,255,0.12), transparent 60%),
+        linear-gradient(180deg, #05050a, var(--bg));
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body::before{
+      content:"";
+      position: fixed;
+      inset: -40px;
+      background: radial-gradient(circle at center, transparent 0 55%, rgba(0,0,0,0.75) 85%);
+      pointer-events: none;
+    }
+
+    .container{
+      width: min(900px, 92vw);
+      padding: 36px 24px 44px;
+      border-radius: 22px;
+      background: rgba(10,10,18,0.55);
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+      text-align: center;
+    }
+
+    .image{
+      width: 100%;
+      margin-bottom: 24px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 35px rgba(255,255,255,0.18);
+    }
+
+    .image img{
+      width: 100%;
+      display: block;
+    }
+
+    .ending-title{
+      margin: 0 0 18px;
+      font-size: 26px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: white;
+      text-shadow:
+        0 0 8px rgba(255,255,255,0.8),
+        0 0 18px rgba(255,255,255,0.6),
+        0 0 34px rgba(255,255,255,0.35);
+      animation: flicker 3s infinite, softShake 0.25s infinite;
+    }
+
+    @keyframes flicker{
+      0%, 100% { opacity: 1; }
+      10% { opacity: 0.9; }
+      12% { opacity: 1; }
+      38% { opacity: 0.85; }
+      40% { opacity: 1; }
+      72% { opacity: 0.92; }
+      74% { opacity: 1; }
+    }
+
+    @keyframes softShake{
+      0% { transform: translate(0,0); }
+      25% { transform: translate(0.4px,-0.4px); }
+      50% { transform: translate(-0.4px,0.4px); }
+      75% { transform: translate(0.4px,0.4px); }
+      100% { transform: translate(0,0); }
+    }
+
+    .text{
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .text p{
+      margin: 14px 0;
+    }
+
+    .choices{
+      margin-top: 34px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .btn{
+      display: block;
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.45);
+      transition: background 0.2s ease, box-shadow 0.2s ease;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .btn:hover{
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 14px 34px rgba(0,0,0,0.55);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <div class="image">
+      <img src="Screenshot 2025-12-16 185648.png">
+    </div>
+
+    <h1 class="ending-title">GOOD END - DREAM?</h1>
+
+    <div class="text">
+      <p>Sunlight hits your eyes.</p>
+      <p>The city is alive.</p>
+      <p>People walk past you.</p>
+      <p>Cars move through the streets.</p>
+
+      <p>
+        Everything looks normal again.<br>
+        But a little <strong>too</strong> normal.
+      </p>
+
+      <p>Nobody talks about the world almost ending.</p>
+
+      <p><strong><em>Was everything a dream?</em></strong></p>
+
+      <p>Or was it real?</p>
+    </div>
+
+    <div class="choices">
+      <a class="btn" href="after_override.html">Go back</a>
+      <a class="btn" href="start.html">Return to start</a>
+    </div>
+
+  </main>
+</body>
+</html>
