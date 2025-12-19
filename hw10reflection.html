@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reflection + Story Guide</title>
 
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      min-height: 100vh;
+      background-color: #ffffe0; /* pale yellow */
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+    }
+
+    main{
+      max-width: 900px;
+      margin: 32px auto 60px;
+      padding: 0 16px;
+    }
+
+    h1, h2{
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .section-card{
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 18px 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      border: 1px solid rgba(0,0,0,0.05);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .section-card.reflection:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 14px 32px rgba(0,0,0,0.16);
+      background: #fffdf5;
+    }
+
+    .reflection-text p{
+      margin-bottom: 10px;
+      line-height: 1.55;
+      font-size: 15px;
+    }
+
+    .section-wrapper{
+      margin-bottom: 26px;
+    }
+
+    .roadmaps-card{
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 18px 20px 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .roadmaps-grid{
+      display: grid;
+      gap: 14px;
+      margin-top: 8px;
+    }
+
+    .roadmaps-grid img{
+      width: 100%;
+      max-width: 100%;
+      border-radius: 12px;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      cursor: pointer;
+    }
+
+    .roadmaps-grid img:hover{
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.20);
+    }
+
+    .back-wrapper{
+      display: flex;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    .back-btn{
+      display: inline-block;
+      padding: 10px 26px;
+      border-radius: 999px;
+      background-color: #ffc9e0; /* pastel pink */
+      color: #4a2a39;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid rgba(0,0,0,0.08);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      transition: transform 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease;
+    }
+
+    .back-btn:hover{
+      transform: translateY(-2px);
+      background-color: #ffb4d4;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.22);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="section-wrapper">
+      <div class="section-card reflection">
+        <h1>Reflection</h1>
+        <div class="reflection-text">
+          <p>I have always liked and enjoyed interactive stories because they feel more personal than regular stories. Instead of just reading something straight through, you actually get to make decisions and see the different outcomes. It reminds me of a content creator I love to watch, who also made content on navigating through interactive stories. In these types of stories, every little choice can change the story's outcome. I think there’s something fun about not knowing what ending you will get until you progress further into the story and see everything build up.</p>
+
+          <p>For this assignment, I wanted to bring that feeling into my own work. I started by setting up a simple HTML page. I decided to go with a dark and glowing background so it would look a bit mysterious and also foster a sense of danger. Then, I built the intro screen and added a button that takes the reader into the story. After that, I created multiple scenes, each with their own choices. Every choice leads to a different path, so people reading it can actually explore different storylines instead of being stuck with just one version.</p>
+
+          <p>I also made a roadmap that shows how all the scenes connect and where each choice leads. It helped me stay organized and made it easier to plan out the endings. The endings themselves are all a little different, some are positive, and some are more unsettling, because that’s honestly what I enjoy most about interactive stories. You never know what someone will choose, and each path says something different about the experience. This assignment was really fun, and it actually made me want to make a longer interactive story in the future.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrapper">
+      <div class="roadmaps-card">
+        <h2>Roadmaps</h2>
+        <div class="roadmaps-grid">
+          <img src="map1.png" alt="Story roadmap 1">
+          <img src="map2.png" alt="Story roadmap 2">
+          <img src="map3.png" alt="Story roadmap 3">
+        </div>
+      </div>
+    </section>
+
+    <div class="back-wrapper">
+      <a class="back-btn" href="welcome.html">Back</a>
+    </div>
+  </main>
+</body>
+</html>
